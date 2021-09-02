@@ -1,0 +1,7 @@
+<mat-list role="list">
+  <mat-card-header>
+    <mat-card-title>Lista de Cadastrados</mat-card-title>
+    </mat-card-header> 
+    <mat-list-item role="listitem" *ngFor="let cliente of clientes" (click)="selecionaCliente(cliente)">{{cliente.nome}}</mat-list-item>
+</mat-list>
+<!--<app-cliente *ngIf="cliente.id" [clientecad] = "cliente"></app-cliente> -->

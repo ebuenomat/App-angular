@@ -1,0 +1,23 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: 16px;
+}
+.button{
+    margin-right: 8px;
+    width:960;height:10;
+}
+section{
+    margin-top: 8px;
+    margin-bottom: 8px;
+   
+}
+mat-radio-button{
+    margin: 10px;
+    align-content: space-around;
+    
+}
+  
+
+
