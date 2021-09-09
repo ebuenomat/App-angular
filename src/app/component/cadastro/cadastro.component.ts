@@ -43,7 +43,7 @@ export class CadastroComponent implements OnInit {
   onSubmit() {
     this.clienteService.salvaCliente(this.cadastroForm.value).subscribe(response => {
       this.router.navigate(['clientes'], { relativeTo: this.route }) 
-     })  
+     })    
   }
   
 }

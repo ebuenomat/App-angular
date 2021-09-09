@@ -11,6 +11,7 @@ import { ClienteService } from 'src/app/service/cliente.service';
 export class ClientesComponent implements OnInit {
 
   clientes: Cliente[] = [];
+  value: string = '';
 
   constructor(private clienteService: ClienteService, private router: Router, private route: ActivatedRoute) { }
 
@@ -22,5 +23,15 @@ export class ClientesComponent implements OnInit {
 
   selecionaCliente(cliente: Cliente) {
     this.router.navigate([cliente.id], { relativeTo: this.route, state: cliente })
+  }
+
+  onClick() {
+    this.router.navigate(['../'], {relativeTo: this.route})   
+  }
+
+  search() {
+    this.clienteService.procuraCliente(this.value).subscribe(response =>{
+      this.clientes=response
+    })
   }
 }

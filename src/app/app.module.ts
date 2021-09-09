@@ -20,6 +20,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
+import { PesquisaComponent } from './component/pesquisa/pesquisa.component';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter";
     AppComponent,
     ClientesComponent,
     ClienteComponent,
-    CadastroComponent
+    CadastroComponent,
+    PesquisaComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter";
     MatSelectModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatMomentDateModule 
+    MatMomentDateModule,
+    MatIconModule 
   ],
   providers: [
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }

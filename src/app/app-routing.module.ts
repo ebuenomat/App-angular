@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ClienteComponent } from './component/cliente/cliente.component';
 import { ClientesComponent } from './component/clientes/clientes.component';
 import { CadastroComponent } from './component/cadastro/cadastro.component';
+import { PesquisaComponent } from './component/pesquisa/pesquisa.component';
 
 const routes: Routes = [
   { path: '', component: CadastroComponent},

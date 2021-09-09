@@ -1,3 +1,9 @@
 mat-card-title{
-    margin: 16px;
+    margin-left: 12px;
+}
+mat-card-content{
+    margin-left: 12px;
+}
+button{
+    margin-left: 12px;
 }
