@@ -7,3 +7,7 @@ mat-card-content{
 button{
     margin-left: 12px;
 }
+mat-form-field{
+    margin-left: 12px;
+    margin: 10px;
+}

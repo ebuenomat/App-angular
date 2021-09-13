@@ -20,7 +20,6 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
-import { PesquisaComponent } from './component/pesquisa/pesquisa.component';
 import {MatIconModule} from '@angular/material/icon';
 
 
@@ -30,7 +29,6 @@ import {MatIconModule} from '@angular/material/icon';
     ClientesComponent,
     ClienteComponent,
     CadastroComponent,
-    PesquisaComponent
   ],
   imports: [
     BrowserModule,
